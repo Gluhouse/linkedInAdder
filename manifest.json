@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Dobavlyator",
+  "description": "This extension will add every person in someone's contacts in LinkedIn",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  },
+  "permissions": ["activeTab"],
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
