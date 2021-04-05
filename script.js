@@ -83,7 +83,8 @@ const app = () => {
       await sleep(100);
       let textArea = document.querySelector("textarea#custom-message");
       textArea.value = `Здравствуйте, я добавил вас, используя свой JS скрипт
-      Hello, I added you using my own JS script.`;
+      Hello, I added you using my own JS script.
+      `;
       textArea.dispatchEvent(new Event("change", { bubbles: true }));
       document.querySelector("button.ml1").click();
       await waitUntill(
